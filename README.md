@@ -1,6 +1,6 @@
-# Sahitya Setu (Kavya-Kanaja) 📖
+# Kavya-Kanaja 📖
 
-**Sahitya Setu** (also known as **Kavya-Kanaja**) is a modern Android application dedicated to the beauty of Kannada literature. Built with Jetpack Compose and Material 3, it offers a seamless experience for reading, listening to, and exploring the works of legendary poets.
+**Kavya-Kanaja** is a modern Android application dedicated to the beauty of Kannada literature. Built with Jetpack Compose and Material 3, it offers a seamless experience for reading, listening to, and exploring the works of legendary poets.
 
 ## ✨ Features
 
@@ -38,11 +38,31 @@
 
 ## 📂 Project Structure
 
-- `ui/theme`: Contains the Compose UI components, screens (`PoemScreen.kt`), and theme configurations.
-- `model`: Data classes for `Poem` and `Poet`.
-- `data`: Repository logic for loading data and managing favorites.
-- `assets`: JSON data files for poems and poets.
-- `res/raw`: Audio files for the poems.
+```text
+app/
+├── src/main/
+│   ├── java/com/example/app/
+│   │   ├── data/           # Repository logic for data loading
+│   │   │   └── PoemRepository.kt
+│   │   ├── model/          # Data classes (Poem, Poet, DailyVerse)
+│   │   │   ├── Poem.kt
+│   │   │   ├── Poet.kt
+│   │   │   └── DailyVerse.kt
+│   │   ├── ui/theme/       # Compose UI Screens and Theme
+│   │   │   ├── PoemScreen.kt   # Main UI implementation
+│   │   │   ├── Theme.kt
+│   │   │   ├── Color.kt
+│   │   │   └── Type.kt
+│   │   └── MainActivity.kt # Entry point of the application
+│   ├── assets/             # JSON data files for poems and poets
+│   │   ├── poems.json
+│   │   ├── poets.json
+│   │   └── special_poems.json
+│   └── res/raw/            # Audio files (.mp3) for poem recitations
+web/                        # Project Landing Page (Hosted on Firebase)
+│   ├── images/             # Visual assets for the website
+│   └── index.html          # Professional landing page source
+```
 
 ## 🤝 Contributing
 
