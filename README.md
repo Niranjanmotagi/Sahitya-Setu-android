@@ -39,7 +39,7 @@ Visit our professional landing page to learn more and download the app:
    ```
 2. **Open the Project**:
    - Launch Android Studio and select **Open**.
-   - Navigate to the `Sahitya-Setu-android` folder.
+   - Navigate to the project folder.
 3. **Sync Gradle**:
    - Wait for the "Gradle Sync" to finish successfully.
 
