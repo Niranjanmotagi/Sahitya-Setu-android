@@ -13,3 +13,9 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Firebase
+.firebase/
+firebaselog.log
+firebase-debug.log
+.runtimeconfig.json
